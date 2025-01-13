@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <com.example.testcalendar.custom_calendar.CustomDateView
+        android:id="@+id/dateView1"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        app:layout_constraintEnd_toStartOf="@id/dateView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.testcalendar.custom_calendar.CustomDateView
+        android:id="@+id/dateView2"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        app:layout_constraintEnd_toStartOf="@id/dateView3"
+        app:layout_constraintStart_toEndOf="@id/dateView1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.testcalendar.custom_calendar.CustomDateView
+        android:id="@+id/dateView3"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        app:layout_constraintEnd_toStartOf="@id/dateView4"
+        app:layout_constraintStart_toEndOf="@id/dateView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.testcalendar.custom_calendar.CustomDateView
+        android:id="@+id/dateView4"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        app:layout_constraintEnd_toStartOf="@id/dateView5"
+        app:layout_constraintStart_toEndOf="@id/dateView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.testcalendar.custom_calendar.CustomDateView
+        android:id="@+id/dateView5"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        app:layout_constraintEnd_toStartOf="@id/dateView6"
+        app:layout_constraintStart_toEndOf="@id/dateView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.testcalendar.custom_calendar.CustomDateView
+        android:id="@+id/dateView6"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        app:layout_constraintEnd_toStartOf="@id/dateView7"
+        app:layout_constraintStart_toEndOf="@id/dateView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.testcalendar.custom_calendar.CustomDateView
+        android:id="@+id/dateView7"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dateView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
